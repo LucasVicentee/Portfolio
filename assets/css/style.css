@@ -49,6 +49,7 @@ header {
 
 main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: aqua;
     box-shadow: 0 0 0 0px rgb(0,0,0);
@@ -71,6 +72,7 @@ img {
     height: auto;
     width: 13%;
     border-radius: 35%;
+    flex-shrink: 0;
 }
 
 .texto-sobre {
@@ -89,6 +91,42 @@ img {
     font-size: 1.3rem;
     margin-top: 1rem;
     text-align: justify; /* ou center, se quiser centralizado */
+}
+
+.habilidades-tecnicas {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10%;
+    width: 75%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    padding: 5%;
+}
+
+.habilidades-tecnicas h1 {
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: justify;
+}
+
+.habilidades h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.habilidades h4 {
+    
 }
 
 #rodape {
