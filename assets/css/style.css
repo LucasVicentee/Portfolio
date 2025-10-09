@@ -1,11 +1,3 @@
-:root {
-    --cor-fundo: #f5f7fa;     /* Cinza muito claro */
-    --cor-texto: #1f2937;      /* Cinza escuro (quase preto) */
-    --cor-primaria: #2563eb;   /* Azul principal */
-    --cor-secundaria: #3b82f6; /* Azul claro */
-    --cor-detalhe: #e5e7eb;    /* Cinza para divisórias */
-}
-
 * {
     margin: 0;
     padding: 0;
