@@ -94,3 +94,5 @@
 // }
 
 // desenharEstrelas();
+
+// Função de alterar cor de fundo
