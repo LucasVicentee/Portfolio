@@ -55,33 +55,35 @@ header {
 
 #sobre-mim {
     display: flex;
-    align-items: center; /* Centraliza verticalmente a imagem e o texto */
-    justify-content: center;
-    padding: 0 10% 5% 10%;
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    justify-content: flex-start; /* Começa da esquerda */
+    gap: 5%; /* Espaço entre a imagem e o texto */
+    padding: 5% 10%;
 }
 
-img {
+#foto {
+    width: 200px;
     height: auto;
-    width: 15%;
-    border-radius: 35%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .texto-sobre {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .texto-sobre h1 {
     font-size: 3rem;
-    text-align: center;
-    margin-bottom: 4%;
+    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
 .texto-sobre p {
     font-size: 1.3rem;
-    margin-top: 1rem;
-    text-align: justify; /* ou center, se quiser centralizado */
+    text-align: justify;
+    line-height: 1.6;
 }
 
 #habilidades-tecnicas {
