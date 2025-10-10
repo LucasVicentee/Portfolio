@@ -14,17 +14,17 @@ body {
 header {
     display: flex; /* Usando flexbox para layout */
     background-color: transparent; /* Fundo transparente */
-    width: 100%; /* Largura total */
+    width: 14%; /* Largura total */
     height: auto; /* Ajuste automático da altura */
     justify-content: center; /* Centraliza horizontalmente */
+    position: fixed;
 }
 
 #menu-navegacao {
     padding-top: 1.5%;
     display: flex; /* Usando flexbox para layout */
-    justify-content: center; 
-    flex-direction: row; 
-    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: flex-start;  
+    flex-direction: column; 
 }
 
 #menu-navegacao ul a {
@@ -39,25 +39,25 @@ header {
     box-shadow: 0 0 0 4px rgb(0,0,0);
 }
 
-main {
+#conteudo-principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: aqua;
     box-shadow: 0 0 0 0px rgb(0,0,0);
     height: auto;
-    width: 75%;
+    width: 70%;
     margin: auto;
     border-radius: 20px 20px;
     margin-top: 2%;
+    margin-left: 20%;
 }
 
 #sobre-mim {
     display: flex;
     align-items: center; /* Centraliza verticalmente a imagem e o texto */
     justify-content: center;
-    gap: 30px; /* Espaço entre imagem e texto */
-    padding: 5%;
+    padding: 0 10% 5% 10%;
 }
 
 img {
@@ -84,7 +84,7 @@ img {
     text-align: justify; /* ou center, se quiser centralizado */
 }
 
-.habilidades-tecnicas {
+#habilidades-tecnicas {
     display: flex;
     flex-wrap: wrap;
     height: 10%;
@@ -92,15 +92,14 @@ img {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: 3%;
-    padding: 5%;
+    padding-bottom: 3%;
 }
 
 .habilidades-tecnicas h1 {
     font-size: 3rem;
     justify-content: center;
     text-align: center;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 }
 
 .habilidades {
