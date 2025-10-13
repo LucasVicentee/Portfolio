@@ -134,9 +134,8 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     line-height: 1.6;
 }
 
-#habilidades-tecnicas {
+#tecnologias-utilizadas {
     display: flex;
-    flex-wrap: wrap;
     height: 10%;
     width: 75%;
     flex-direction: row;
@@ -145,28 +144,29 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     padding-bottom: 3%;
 }
 
-.habilidades-tecnicas h1 {
+.tecnologias-utilizadas h1 {
     font-size: 3rem;
     justify-content: center;
     text-align: center;
     margin-bottom: 5%;
 }
 
-.habilidades {
+.tecnologias {
   flex: 1;
   min-width: 300px; 
   text-align: justify;
 }
 
-.habilidades-container {
+.tecnologias-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 5%;
-  flex-wrap: wrap; /* permite quebrar em telas menores */
+  flex-wrap: wrap;
 }
 
-.habilidades h4 {
+.tecnologias h4 {
     font-size: 1.7rem;
     text-align: center;
 }
