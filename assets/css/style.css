@@ -157,19 +157,7 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     margin-bottom: 5%;
 }
 
-#back-end h2 {
-    justify-content: center;
-    text-align: center;
-    margin-top: 7%;
-}
-
-#front-end h2 {
-    justify-content: center;
-    text-align: center;
-    margin-top: 7%;
-}
-
-#banco-de-dados h2 {
+#back-end h2, #front-end h2, #banco-de-dados h2 {
     justify-content: center;
     text-align: center;
     margin-top: 7%;
