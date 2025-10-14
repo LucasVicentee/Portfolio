@@ -157,10 +157,22 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     margin-bottom: 5%;
 }
 
-.tecnologias-utilizadas h2 {
+#back-end h2 {
     justify-content: center;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 7%;
+}
+
+#front-end h2 {
+    justify-content: center;
+    text-align: center;
+    margin-top: 7%;
+}
+
+#banco-de-dados h2 {
+    justify-content: center;
+    text-align: center;
+    margin-top: 7%;
 }
 
 .tecnologias-container {
