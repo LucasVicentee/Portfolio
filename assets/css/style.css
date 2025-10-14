@@ -116,6 +116,12 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+#foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    transition: 0.5s;
+}
+
 .texto-sobre {
     display: flex;
     flex-direction: column;
@@ -151,10 +157,17 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     margin-bottom: 5%;
 }
 
+.tecnologias-utilizadas h2 {
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
 .tecnologias-container {
   display: flex;
   flex-direction: row;
-  gap: 5%;  
+  gap: 5%; 
+  margin-top: 3%; 
 }
 
 .card-tecnologia {
@@ -172,6 +185,12 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     height: auto;
     width: 100%;
     text-align: center;
+}
+
+.card-tecnologia img {
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .card-tecnologia:hover {
