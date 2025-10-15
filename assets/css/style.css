@@ -30,7 +30,7 @@ header {
     background-color: grey;
     border-radius: 50px 50px;
     margin-top: 1%;
-    margin-left: 85%;
+    margin-left: 80%;
     position: relative;
     cursor: pointer;
 }
@@ -65,15 +65,27 @@ body.dark #conteudo-principal { /* Estilização do conteudo principal quando em
     color: black;
 }
 
+body.dark #menu-navegacao ul a:hover {
+    color: black;
+    background-color: #f1faee;
+    border-radius: 20px 20px;
+    box-shadow: 0 0 0 4px rgb(0,0,0);
+}
+
 body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu quando em modo light */
     color: black;
 }
 
+body.dark #rodape { /* Estilização do rodapé quando em modo light */
+    color: black;
+}
+
 #menu-navegacao {
-    padding-top: 1.5%;
+    margin-top: 15%;
     display: flex; /* Usando flexbox para layout */
     justify-content: flex-start;  
-    flex-direction: column; 
+    flex-direction: column;
+    
 }
 
 #menu-navegacao ul a {
@@ -106,7 +118,7 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     align-items: center; /* Alinha verticalmente a imagem e o texto */
     justify-content: flex-start; /* Começa da esquerda */
     gap: 5%; /* Espaço entre a imagem e o texto */
-    padding: 5% 10%;
+    padding: 0 5% 5% 5%;
 }
 
 #foto {
@@ -114,6 +126,7 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 2%;
 }
 
 #foto:hover {
@@ -131,7 +144,6 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
 .texto-sobre h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    text-align: left;
 }
 
 .texto-sobre p {
@@ -174,7 +186,7 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 10%;
     background-color: rgb(255, 255, 255);
     padding: 1%;
     color: black;
@@ -203,6 +215,7 @@ body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu
 }
 
 #rodape {
+    color: #f1faee;
     display: flex;
     justify-content: center;
     align-items: center;
