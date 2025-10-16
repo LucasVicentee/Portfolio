@@ -59,17 +59,36 @@ header {
 
 body.dark { /* Estilização do body quando em modo light */
     background-color: #e4e4e4;
+    transition: .5s;
 }
 
 body.dark #conteudo-principal { /* Estilização do conteudo principal quando em modo light */
     color: black;
 }
 
+body.dark .btn-expandir > i {
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+body.dark #menu-navegacao {
+    background-color: #f1faee;
+    box-shadow: 3px 3px 0 black;
+    transition: .5s;
+}
+
+body.dark ul li.item-menu a .icon > i {
+    color: black;
+}
+
+body.dark ul li.item-menu a .txt-link {
+    color: black;
+}
+
 body.dark #menu-navegacao ul a:hover {
     color: black;
-    background-color: #f1faee;
-    border-radius: 20px 20px;
-    box-shadow: 0 0 0 4px rgb(0,0,0);
+    background-color: grey;
 }
 
 body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu quando em modo light */
@@ -91,7 +110,7 @@ body.dark #rodape { /* Estilização do rodapé quando em modo light */
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: width 0.5s ease;
+    transition: .5s;
 }
 
 #menu-navegacao.expandir {
@@ -100,7 +119,7 @@ body.dark #rodape { /* Estilização do rodapé quando em modo light */
 
 .btn-expandir {
     width: 100%;
-    padding-left: 25px;
+    padding-left: 22px;
     /* margin-bottom: 10%; */
 }
 
