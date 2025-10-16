@@ -82,7 +82,7 @@ body.dark #rodape { /* Estilização do rodapé quando em modo light */
 
 /* Início do Menu de Navegação */
 #menu-navegacao {
-    width: 80px; /* largura fixa quando recolhido */
+    width: 68px; /* largura fixa quando recolhido */
     height: 100%;
     background-color: #232323;
     padding: 40px 0;
@@ -91,17 +91,17 @@ body.dark #rodape { /* Estilização do rodapé quando em modo light */
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 }
 
-#menu-navegacao:hover {
+#menu-navegacao.expandir {
     width: 255px; /* largura ao expandir */
 }
 
 .btn-expandir {
     width: 100%;
-    padding-left: 10px;
-    margin-bottom: 10%;
+    padding-left: 25px;
+    /* margin-bottom: 10%; */
 }
 
 .btn-expandir > i {
@@ -119,6 +119,10 @@ ul li.item-menu {
     display: flex;
     align-items: center;
     transition: background-color 0.2s;
+}
+
+ul li.ativo {
+    background-color: grey;
 }
 
 ul li.item-menu:hover {
@@ -156,7 +160,7 @@ ul li.item-menu a .txt-link {
 }
 
 /* Quando o menu expande */
-#menu-navegacao:hover .txt-link {
+#menu-navegacao.expandir .txt-link {
     opacity: 1;
     visibility: visible;
 }
@@ -173,7 +177,7 @@ ul li.item-menu a .txt-link {
     width: 70%;
     margin: auto;
     border-radius: 20px 20px;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 #sobre-mim {
