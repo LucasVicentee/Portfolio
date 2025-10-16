@@ -80,25 +80,61 @@ body.dark #rodape { /* Estilização do rodapé quando em modo light */
     color: black;
 }
 
+/* Inicio do Menu de Navegação */
 #menu-navegacao {
-    margin-top: 15%;
-    display: flex; /* Usando flexbox para layout */
-    justify-content: flex-start;  
-    flex-direction: column;
-    
+    width: 300px;
+    height: 100%;
+    background-color: #232323;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 3px 0 #f1faee;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-#menu-navegacao ul a {
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i {
     color: #f1faee;
-    text-decoration: none; /* Remover sublinhado */
-    font-size: 1.5rem; /* Tamanho da fonte */
+    font-size: 24px;
+    cursor: pointer;
 }
 
-#menu-navegacao ul a:hover {
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px 20px;
-    box-shadow: 0 0 0 4px rgb(0,0,0);
+ul {
+    height: 100%;
+    list-style-type: none;
 }
+
+ul li.item-menu {
+    transition: .1s;
+}
+
+ul li.item-menu:hover {
+    background-color: grey;
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    color: #f1faee;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+    color: #f1faee;
+}
+/* Fim do Menu de Navegação */
 
 #conteudo-principal {
     display: flex;
