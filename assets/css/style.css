@@ -80,27 +80,28 @@ body.dark #rodape { /* Estilização do rodapé quando em modo light */
     color: black;
 }
 
-/* Inicio do Menu de Navegação */
+/* Início do Menu de Navegação */
 #menu-navegacao {
-    width: 4%;
+    width: 80px; /* largura fixa quando recolhido */
     height: 100%;
     background-color: #232323;
-    padding: 40px 0 40px 1%;
+    padding: 40px 0;
     box-shadow: 3px 3px 0 #f1faee;
     position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: .3s;
+    transition: width 0.3s ease;
 }
 
 #menu-navegacao:hover {
-    width: 300px;
+    width: 255px; /* largura ao expandir */
 }
 
 .btn-expandir {
     width: 100%;
     padding-left: 10px;
+    margin-bottom: 10%;
 }
 
 .btn-expandir > i {
@@ -115,7 +116,9 @@ ul {
 }
 
 ul li.item-menu {
-    transition: .1s;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
 }
 
 ul li.item-menu:hover {
@@ -126,21 +129,38 @@ ul li.item-menu a {
     color: white;
     text-decoration: none;
     font-size: 20px;
-    padding: 20px 4%;
+    padding: 15px 20px;
     display: flex;
-    line-height: 40px;
+    align-items: center;
+    width: 100%;
+    position: relative;
 }
 
-ul li.item-menu a .icon > i{
-    font-size: 30px;
+/* Ícones */
+ul li.item-menu a .icon > i {
+    font-size: 28px;
     color: #f1faee;
-    margin-left: 10px;
+    text-align: center;
+    width: 40px; /* reserva espaço fixo */
+    flex-shrink: 0;
 }
 
+/* Texto */
 ul li.item-menu a .txt-link {
-    margin-left: 40px;
     color: #f1faee;
+    margin-left: 20px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
+/* Quando o menu expande */
+#menu-navegacao:hover .txt-link {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* Fim do Menu de Navegação */
 
 #conteudo-principal {
