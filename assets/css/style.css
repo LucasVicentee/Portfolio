@@ -82,7 +82,7 @@ body.dark #rodape { /* Estilização do rodapé quando em modo light */
 
 /* Inicio do Menu de Navegação */
 #menu-navegacao {
-    width: 300px;
+    width: 4%;
     height: 100%;
     background-color: #232323;
     padding: 40px 0 40px 1%;
@@ -90,6 +90,12 @@ body.dark #rodape { /* Estilização do rodapé quando em modo light */
     position: fixed;
     top: 0;
     left: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+#menu-navegacao:hover {
+    width: 300px;
 }
 
 .btn-expandir {
@@ -128,6 +134,7 @@ ul li.item-menu a {
 ul li.item-menu a .icon > i{
     font-size: 30px;
     color: #f1faee;
+    margin-left: 10px;
 }
 
 ul li.item-menu a .txt-link {
