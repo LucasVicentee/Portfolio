@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* Deixa suave quando o usuário for utilizar o site clicando no menu de navegação de uma seção para a outra */
+}
+
 body {
     /* background: linear-gradient(141deg,rgba(176, 176, 176, 1) 0%, rgba(135, 135, 135, 1) 50%, rgba(79, 79, 79, 1) 100%); */
     background-color: #232323;
