@@ -31,3 +31,20 @@ var menuNavegacao = document.querySelector('#menu-navegacao');
 btnExpandir.addEventListener('click', function() { 
     menuNavegacao.classList.toggle('expandir'); // Alterna a classe 'expandir' no menu de navegação
 });
+
+// Calcular idade atual de acordo com o ano atual
+const dataNascimento = new Date('2004-02-06'); // Minha data de nascimento
+
+  const hoje = new Date(); // Data atual do dispositivo
+  let idade = hoje.getFullYear() - dataNascimento.getFullYear(); // Calculando a diferença dos anos
+  const mesAtual = hoje.getMonth(); // Mês atual (0 a 11)
+  const diaAtual = hoje.getDate(); // Dia atual do mês (1 a 31)
+
+  // Verifica se o aniversário já aconteceu neste ano
+  if (
+    mesAtual < dataNascimento.getMonth() || (mesAtual === dataNascimento.getMonth() && diaAtual < dataNascimento.getDate())
+  ) {
+    idade--;
+  }
+
+  document.getElementById('idade-atual').textContent = idade; // Exibe a idade no HTML
