@@ -208,7 +208,7 @@ ul li.item-menu a .txt-link {
     align-items: center; /* Alinha verticalmente a imagem e o texto */
     justify-content: flex-start; /* Começa da esquerda */
     gap: 5%; /* Espaço entre a imagem e o texto */
-    padding: 0 5% 10% 5%; 
+    padding: 0 5% 8% 5%; 
 }
 
 #foto {
@@ -249,7 +249,7 @@ ul li.item-menu a .txt-link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 5% 10% 5%; 
+    padding: 0 5% 8% 5%; 
 }
 
 #tecnologias-utilizadas h1 {
@@ -311,7 +311,7 @@ ul li.item-menu a .txt-link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 5% 10% 5%; 
+    padding: 0 5% 8% 5%; 
 }
 
 #certificados-obtidos h1 {
