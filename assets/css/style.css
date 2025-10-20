@@ -259,7 +259,7 @@ ul li.item-menu a .txt-link {
     margin-bottom: 5%;
 }
 
-#back-end h2, #front-end h2, #banco-de-dados h2 {
+#back-end h2, #front-end h2, #banco-de-dados, #versionamento h2 {
     justify-content: center;
     text-align: center;
     margin-top: 7%;
