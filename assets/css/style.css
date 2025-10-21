@@ -338,11 +338,11 @@ ul li.item-menu a .txt-link {
 #formacao {
     display: flex;
     height: 10%;
-    width: 75%;
+    width: 85%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 5% 8% 5%; 
+    padding: 0 0 8% 0; 
 }
 
 #formacao h1 {
@@ -354,9 +354,37 @@ ul li.item-menu a .txt-link {
 
 .formacao-container {
   display: flex;
-  flex-direction: row;
-  gap: 5%; 
-  margin-top: 3%; 
+  align-items: center;
+  gap: 5%;  
+}
+
+#formacao-finalizada h2 {
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 3% 0; 
+}
+
+.formacao-container {
+    display: flex;
+    justify-content: center;
+}
+
+.formacao-container img {
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.formacao-texto 
+
+.formacao-container p {
+    width: 30%;
+    height: auto;
+}
+
+.formacao-container a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #rodape {
