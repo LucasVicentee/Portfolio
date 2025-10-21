@@ -331,6 +331,31 @@ ul li.item-menu a .txt-link {
   display: flex;
   flex-direction: row;
   gap: 5%; 
+  margin-top: 3%;
+  padding: 0 0 8% 0; 
+}
+
+#formacao {
+    display: flex;
+    height: 10%;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5% 8% 5%; 
+}
+
+#formacao h1 {
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.formacao-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5%; 
   margin-top: 3%; 
 }
 
