@@ -65,5 +65,5 @@ ScrollReveal().reveal('#formacao', { origin: 'top' });
 
 // Revela elementos internos com efeitos suaves
 ScrollReveal().reveal('.card-tecnologia', { interval: 150, origin: 'bottom' });
-ScrollReveal().reveal('.formacao-container img', { origin: 'left', delay: 300 });
+ScrollReveal().reveal('.formacao-container img', { interval: 150, origin: 'left', delay: 300 });
 ScrollReveal().reveal('.formacao-container p', { origin: 'right', delay: 400 });
