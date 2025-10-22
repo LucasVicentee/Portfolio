@@ -48,3 +48,22 @@ const dataNascimento = new Date('2004-02-06'); // Minha data de nascimento
   }
 
   document.getElementById('idade-atual').textContent = idade; // Exibe a idade no HTML
+
+  // ScrollReveal 
+ScrollReveal({ 
+  reset: true,        // Faz a animação repetir ao rolar para cima/baixo
+  distance: '60px',   // Distância do movimento
+  duration: 1200,     // Duração da animação (em ms)
+  delay: 200          // Atraso inicial
+});
+
+// Revela cada seção principal
+ScrollReveal().reveal('#sobre-mim', { origin: 'left' });
+ScrollReveal().reveal('#tecnologias-utilizadas', { origin: 'bottom' });
+ScrollReveal().reveal('#certificados-obtidos', { origin: 'right' });
+ScrollReveal().reveal('#formacao', { origin: 'top' });
+
+// Revela elementos internos com efeitos suaves
+ScrollReveal().reveal('.card-tecnologia', { interval: 150, origin: 'bottom' });
+ScrollReveal().reveal('.formacao-container img', { origin: 'left', delay: 300 });
+ScrollReveal().reveal('.formacao-container p', { origin: 'right', delay: 400 });

@@ -247,7 +247,7 @@ ul li.item-menu a .txt-link {
 #tecnologias-utilizadas {
     display: flex;
     height: 10%;
-    width: 75%;
+    width: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -307,7 +307,7 @@ ul li.item-menu a .txt-link {
 
 #certificaods-obtidos {
     display: flex;
-    height: 10%;
+    height: 100vh;
     width: 75%;
     flex-direction: column;
     align-items: center;
@@ -338,7 +338,7 @@ ul li.item-menu a .txt-link {
 
 #formacao {
     display: flex;
-    height: 10%;
+    height: 100vh;
     width: 85%;
     flex-direction: column;
     align-items: center;
