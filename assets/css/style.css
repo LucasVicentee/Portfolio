@@ -204,6 +204,7 @@ ul li.item-menu a .txt-link {
 }
 
 #sobre-mim {
+    height: 100vh;
     display: flex;
     align-items: center; /* Alinha verticalmente a imagem e o texto */
     justify-content: flex-start; /* Começa da esquerda */
@@ -240,6 +241,7 @@ ul li.item-menu a .txt-link {
     font-size: 1.3rem;
     text-align: justify;
     line-height: 1.6;
+    padding: 1%;
 }
 
 #tecnologias-utilizadas {
@@ -256,7 +258,6 @@ ul li.item-menu a .txt-link {
     font-size: 3rem;
     justify-content: center;
     text-align: center;
-    margin-bottom: 5%;
 }
 
 #back-end h2, #front-end h2, #banco-de-dados, #versionamento h2 {
@@ -370,7 +371,7 @@ ul li.item-menu a .txt-link {
 }
 
 .formacao-container img {
-    width: 350px;
+    width: 300px;
     height: 200px;
     border-radius: 15px;
 }
