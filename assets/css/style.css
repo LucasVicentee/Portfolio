@@ -209,7 +209,6 @@ ul li.item-menu a .txt-link {
     align-items: center; /* Alinha verticalmente a imagem e o texto */
     justify-content: flex-start; /* Começa da esquerda */
     gap: 5%; /* Espaço entre a imagem e o texto */
-    padding: 0 5% 8% 5%; 
 }
 
 #foto {
@@ -251,7 +250,6 @@ ul li.item-menu a .txt-link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 5% 8% 5%; 
 }
 
 #tecnologias-utilizadas h1 {
@@ -305,14 +303,13 @@ ul li.item-menu a .txt-link {
     text-align: center;
 }
 
-#certificaods-obtidos {
+#certificados-obtidos {
     display: flex;
     height: 100vh;
     width: 75%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 5% 8% 5%; 
 }
 
 #certificados-obtidos h1 {
@@ -338,12 +335,11 @@ ul li.item-menu a .txt-link {
 
 #formacao {
     display: flex;
-    height: 100vh;
+    height: 110vh;
     width: 85%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 0 8% 0; 
 }
 
 #formacao h1 {
