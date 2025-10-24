@@ -294,9 +294,9 @@ ul li.item-menu a .txt-link {
     margin-bottom: 10px;
 }
 
-.card-tecnologia:hover {
+/* .card-tecnologia:hover {
     transform: translateY(-10px);
-}
+} */
 
 .tecnologias h4 {
     font-size: 1.7rem;
