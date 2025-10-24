@@ -49,7 +49,7 @@ const dataNascimento = new Date('2004-02-06'); // Minha data de nascimento
 
   document.getElementById('idade-atual').textContent = idade; // Exibe a idade no HTML
 
-  // ScrollReveal 
+// ScrollReveal 
 ScrollReveal({ 
   reset: true,        // Faz a animação repetir ao rolar para cima/baixo
   distance: '60px',   // Distância do movimento

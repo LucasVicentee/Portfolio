@@ -371,7 +371,7 @@ ul li.item-menu a .txt-link {
     border-radius: 15px;
 }
 
-.formacao-texto 
+.formacao-texto p 
 
 .formacao-container p {
     width: 30%;
@@ -384,7 +384,18 @@ ul li.item-menu a .txt-link {
 }
 
 #contato-links {
+    display: flex;
     height: 100vh;
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato-links h1{
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 #rodape {
