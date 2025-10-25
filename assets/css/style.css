@@ -385,10 +385,27 @@ ul li.item-menu a .txt-link {
 
 #contato-links {
     display: flex;
-    height: 100vh;
+    height: 45vh;
     width: 85%;
     flex-direction: column;
     align-items: center;
+}
+
+.card-contatos {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: auto;
+    border-radius: 10%;
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    text-align: center;
 }
 
 #contato-links h1{
@@ -397,6 +414,66 @@ ul li.item-menu a .txt-link {
     text-align: center;
     margin-bottom: 5%;
 }
+
+.contatos-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5%; 
+  margin-top: 3%; 
+}
+
+.card-contatos img {
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#contato {
+    display: flex;
+    height: 100vh;
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entre-em-contato form {
+    max-width: 70rem;
+    margin: 3rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.entre-em-contato .input-caixa {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.entre-em-contato form .input-caixa input,
+.entre-em-contato form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    /* color: var(--text-color);
+    background: var(--snd-bg-color); */
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.entre-em-contato form .input-caixa input {
+    width: 49%;
+}
+
+
+.entre-em-contato form textarea {
+    resize: none;
+}
+
+.entre-em-contato form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
 
 #rodape {
     color: #f1faee;
