@@ -392,7 +392,7 @@ ul li.item-menu a .txt-link {
 /* inicio opções para contato */
 #contato-links {
     display: flex;
-    height: 45vh;
+    height: 40vh;
     width: 85%;
     flex-direction: column;
     align-items: center;
@@ -419,7 +419,7 @@ ul li.item-menu a .txt-link {
     font-size: 3rem;
     justify-content: center;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .contatos-container {
