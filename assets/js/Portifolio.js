@@ -62,8 +62,12 @@ ScrollReveal().reveal('#sobre-mim', { origin: 'left' });
 ScrollReveal().reveal('#tecnologias-utilizadas', { origin: 'bottom' });
 ScrollReveal().reveal('#certificados-obtidos', { origin: 'right' });
 ScrollReveal().reveal('#formacao', { origin: 'top' });
+ScrollReveal().reveal('#contato-links', {origin: "bottom"});
+ScrollReveal().reveal('#contato', {origin: "bottom"});
 
 // Revela elementos internos com efeitos suaves
 ScrollReveal().reveal('.card-tecnologia', { interval: 150, origin: 'bottom' });
 ScrollReveal().reveal('.formacao-container img', { interval: 150, origin: 'left', delay: 300 });
-ScrollReveal().reveal('.formacao-container p', { origin: 'right', delay: 400 });
+ScrollReveal().reveal('.formacao-container p', { interval: 150, origin: 'right', delay: 400 });
+ScrollReveal().reveal('.contatos-container', {interval: 150, origin: "left", delay: 400});
+ScrollReveal().reveal('.entre-em-contato', {interval: 150, origin: "left", delay: 400});

@@ -1,3 +1,7 @@
+:root {
+    /* --cor-de-fundo(); */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -332,6 +336,7 @@ ul li.item-menu a .txt-link {
   margin-top: 3%;
 }
 
+/* Inicio Seção de Formação */
 #formacao {
     display: flex;
     height: 110vh;
@@ -382,7 +387,9 @@ ul li.item-menu a .txt-link {
     text-decoration: none;
     color: inherit;
 }
+/* Fim da seção de Formação */
 
+/* inicio opções para contato */
 #contato-links {
     display: flex;
     height: 45vh;
@@ -427,6 +434,7 @@ ul li.item-menu a .txt-link {
     height: auto;
     margin-bottom: 10px;
 }
+/* Fim opções para contato */
 
 /* inicio do Formulário para entrar em contato */
 #contato {
@@ -481,11 +489,13 @@ ul li.item-menu a .txt-link {
 .entre-em-contato form .btn:hover {
     background-color: green;
 }
+/* Fim Formulário para contato */
 
-
+/* Inicio Rodapé */
 #rodape {
     color: #f1faee;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* Fim Rodapé */
