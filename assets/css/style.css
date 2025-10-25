@@ -486,6 +486,12 @@ ul li.item-menu a .txt-link {
     padding: 1.1rem;
 }
 
+.entre-em-contato form #assunto-email {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .entre-em-contato form .btn:hover {
     background-color: green;
 }
