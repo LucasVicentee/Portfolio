@@ -517,6 +517,30 @@ ul li.item-menu a .txt-link {
     overflow-x: hidden;
   }
 
+  .trilho { /* Estilização do trilho do botão */
+    display: flex;
+    width: 70px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 50px 50px;
+    margin-left: 80%;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador { /* Estilização do indicador do botão */
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 2.5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease; /* Animação suave */
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
   /* MENU */
   #menu-navegacao ul {
     display: flex;
@@ -551,7 +575,7 @@ ul li.item-menu a .txt-link {
     width: 80%;
     margin: auto;
     border-radius: 20px 20px;
-    margin-left: 35%;
+    margin: 5% 0 0 35%;
 }
 
   /* SOBRE MIM */
@@ -608,14 +632,24 @@ ul li.item-menu a .txt-link {
 
   /* CERTIFICADOS */
   .certificados-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
-  .certificados-container .card-tecnologia {
-    width: 90% !important;
+  #certificados-obtidos {
+    height: auto;
+    width: 80%;
+    margin-top: 20%;
   }
 
+  #certificados-obtidos h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #certificados-obtidos #certificados-udemy .certificados-container .card-tecnologia {
+    width: 10rem !important;
+}
   /* FORMAÇÃO */
   .formacao-container {
     flex-direction: column;
@@ -624,19 +658,19 @@ ul li.item-menu a .txt-link {
   }
 
   .formacao-container img {
-    width: 15px;
+    width: 200px;
     margin-bottom: 1rem;
   }
 
   /* CONTATOS */
   .contatos-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
   }
 
   .card-contatos {
-    width: 90% !important;
+    width: 40% !important;
   }
 
   /* FORMULÁRIO DE CONTATO */
@@ -644,6 +678,15 @@ ul li.item-menu a .txt-link {
     width: 100%;
     display: flex;
     flex-direction: column;
+  } 
+
+  #contato {
+    margin-top: 20%;
+  }
+
+  #contato h1 {
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   form input,
@@ -658,6 +701,10 @@ ul li.item-menu a .txt-link {
   }
 
   /* RODAPÉ */
+  footer {
+    margin-top: 70%;
+  }
+
   footer p {
     font-size: 0.8rem;
     text-align: center;
