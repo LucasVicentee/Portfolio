@@ -65,7 +65,7 @@ ScrollReveal().reveal('#formacao', { origin: 'top' });
 ScrollReveal().reveal('#contato-links', {origin: "bottom"});
 ScrollReveal().reveal('#contato', {origin: "bottom"});
 
-// Revela elementos internos com efeitos suaves
+// Desativando o ScrollReveal em telas menores
 ScrollReveal().reveal('.texto-sobre p', {interval: 150, origin: 'left', delay: 400});
 ScrollReveal().reveal('#tecnologias-utilizadas h1', {interval: 150, origin: "top", delay: 400});
 ScrollReveal().reveal('.titulo-tecnologias h2', {interval: 150, origin: 'right', delay: 400});
@@ -77,3 +77,31 @@ ScrollReveal().reveal('#contato h1', {interval: 150, origin: 'top', delay: 400})
 ScrollReveal().reveal('.formacao-container p', { interval: 150, origin: 'right', delay: 400 });
 ScrollReveal().reveal('.contatos-container', {interval: 150, origin: "left", delay: 400});
 ScrollReveal().reveal('.entre-em-contato', {interval: 150, origin: "left", delay: 400});
+
+if (window.innerWidth > 768) {
+  ScrollReveal({ 
+  reset: true,        
+  distance: '60px',   
+  duration: 1200,    
+  delay: 200          
+});
+
+ScrollReveal().reveal('#sobre-mim', { origin: 'left' });
+ScrollReveal().reveal('#tecnologias-utilizadas', { origin: 'bottom' });
+ScrollReveal().reveal('#certificados-obtidos', { origin: 'right' });
+ScrollReveal().reveal('#formacao', { origin: 'top' });
+ScrollReveal().reveal('#contato-links', {origin: "bottom"});
+ScrollReveal().reveal('#contato', {origin: "bottom"});
+
+ScrollReveal().reveal('.texto-sobre p', {interval: 150, origin: 'left', delay: 400});
+ScrollReveal().reveal('#tecnologias-utilizadas h1', {interval: 150, origin: "top", delay: 400});
+ScrollReveal().reveal('.titulo-tecnologias h2', {interval: 150, origin: 'right', delay: 400});
+ScrollReveal().reveal('.card-tecnologia', { interval: 150, origin: 'bottom' });
+ScrollReveal().reveal('#certificados-obtidos h1', {interval: 150, origin: 'left', delay: 400});
+ScrollReveal().reveal('.formacao-container img', { interval: 150, origin: 'left', delay: 300 });
+ScrollReveal().reveal('#contato-links h1', {interval: 150, origin: 'top', delay: 400});
+ScrollReveal().reveal('#contato h1', {interval: 150, origin: 'top', delay: 400});
+ScrollReveal().reveal('.formacao-container p', { interval: 150, origin: 'right', delay: 400 });
+ScrollReveal().reveal('.contatos-container', {interval: 150, origin: "left", delay: 400});
+ScrollReveal().reveal('.entre-em-contato', {interval: 150, origin: "left", delay: 400});
+}
