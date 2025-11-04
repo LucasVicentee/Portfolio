@@ -509,7 +509,7 @@ ul li.item-menu a .txt-link {
 
 /* Inicio  */
 /* Ajustes para telas de até 600px (celulares) */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
 
   /* Remove margens laterais e evita estouro de largura */
   body {
@@ -519,8 +519,8 @@ ul li.item-menu a .txt-link {
 
   .trilho { /* Estilização do trilho do botão */
     display: flex;
-    width: 70px;
-    height: 30px;
+    width: 90px;
+    height: 40px;
     background-color: grey;
     border-radius: 50px 50px;
     margin-left: 80%;
@@ -529,8 +529,8 @@ ul li.item-menu a .txt-link {
 }
 
 .trilho .indicador { /* Estilização do indicador do botão */
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background-color: black;
     border-radius: 50%;
     margin: 2.5px;
@@ -542,6 +542,14 @@ ul li.item-menu a .txt-link {
 }
 
   /* MENU */
+  #menu-navegacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+  }
+
   #menu-navegacao ul {
     display: flex;
     flex-direction: column; /* deixa os itens empilhados */
@@ -556,13 +564,12 @@ ul li.item-menu a .txt-link {
 
   #menu-navegacao .txt-link {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 3rem;
   }
 
   /* Se tiver um botão hamburguer */
   .btn-expandir {
-    display: block;
-    font-size: 1.8rem;
+    display: none;
   }
 
   #conteudo-principal {
@@ -572,7 +579,7 @@ ul li.item-menu a .txt-link {
     color: #f1faee;
     box-shadow: 0 0 0 0px rgb(0,0,0);
     height: auto;
-    width: 80%;
+    width: 100%;
     margin: auto;
     border-radius: 20px 20px;
     margin: 5% 0 0 35%;
@@ -598,7 +605,7 @@ ul li.item-menu a .txt-link {
   }
 
   #sobre-mim {
-    margin-bottom: 20%;
+    margin-bottom: 5%;
   }
 
   #sobre-mim p {
@@ -612,8 +619,9 @@ ul li.item-menu a .txt-link {
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    width: 70%;
-    margin-left: 15%;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
   }
 
   #tecnologias-utilizadas h1 {
@@ -681,7 +689,7 @@ ul li.item-menu a .txt-link {
   } 
 
   #contato {
-    margin-top: 20%;
+    margin-top: 3%;
   }
 
   #contato h1 {
@@ -702,12 +710,15 @@ ul li.item-menu a .txt-link {
 
   /* RODAPÉ */
   footer {
-    margin-top: 70%;
+    margin-top: 30%;
+    width: 100%;
   }
 
   footer p {
     font-size: 0.8rem;
     text-align: center;
+    margin-top: 1rem;
+    margin-left: 60%;
   }
 }
 
