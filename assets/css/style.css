@@ -513,7 +513,7 @@ ul li.item-menu a .txt-link {
 
   /* Remove margens laterais e evita estouro de largura */
   body {
-    padding: 0 10px;
+    width: 100vw;
     overflow-x: hidden;
   }
 
@@ -587,7 +587,9 @@ ul li.item-menu a .txt-link {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    width: 70%;
+    margin-left: 15%;
   }
 
   #tecnologias-utilizadas h1 {
