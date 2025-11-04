@@ -587,11 +587,16 @@ ul li.item-menu a .txt-link {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 10px;
+  }
+
+  #tecnologias-utilizadas h1 {
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .card-tecnologia {
-    width: 30% !important; /* ocupa quase toda a tela */
+    width: 25% !important; 
   }
 
   .titulo-tecnologias h2 {
