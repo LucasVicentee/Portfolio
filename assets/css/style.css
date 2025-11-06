@@ -1,7 +1,15 @@
 :root {
   --cor-de-fundo: rgb(35, 35, 35);
+  --cor-de-fundo-white: rgb(228, 228, 228);
+  --cor-conteudo-white: rgb(0, 0, 0);
   --cor-de-fundo-trilho: rgb(128, 128, 128); 
+  --cor-de-fundo-trilho-dark: rgb(195, 195, 195); 
+  --cor-de-fundo-trilho-white: rgb(228, 228, 228);
   --cor-de-fundo-trilho-indicador: rgb(0, 0, 0);
+  --cor-icones: rgb(241, 250, 238);
+  --cor-icones-white: rgb(0, 0, 0);
+  --cor-fundo-menu-navegacao-white: rgb(241, 250, 238);
+  --cor-fundo-menu-navegacao-hover-white: rgb(128, 128, 128);
 }
 
 * {
@@ -59,61 +67,61 @@ header {
 }
 
 .trilho.dark { /* Estilização do trilho quando em modo dark */
-    background-color: #c3c3c3;
+    background-color: var(--cor-de-fundo-trilho-dark);
 }
 
 .trilho.dark .indicador{ /* Estilização do indicador quando em modo dark */
     left: 49px;
-    background-color: white;
+    background-color: var(--cor-de-fundo-trilho-white);
 }
 
 body.dark { /* Estilização do body quando em modo light */
-    background-color: #e4e4e4;
+    background-color: var(--cor-de-fundo-white);
     transition: .5s;
 }
 
 body.dark #conteudo-principal { /* Estilização do conteudo principal quando em modo light */
-    color: black;
+    color: var(--cor-conteudo-white);
 }
 
 body.dark .btn-expandir > i {
-    color: black;
+    color: var(--cor-icones-white);
     font-size: 24px;
     cursor: pointer;
 }
 
 body.dark #menu-navegacao {
-    background-color: #f1faee;
+    background-color: var(--cor-fundo-menu-navegacao-white);
     box-shadow: 3px 3px 0 black;
     transition: .5s;
 }
 
 body.dark ul li.item-menu a .icon > i {
-    color: black;
+    color: var(--cor-icones-white);
 }
 
 body.dark ul li.item-menu a .txt-link {
-    color: black;
+    color: var(--cor-conteudo-white);
 }
 
 body.dark #menu-navegacao ul a:hover {
-    color: black;
-    background-color: grey;
+    color: var(--cor-conteudo-white);
+    background-color: var(--cor-fundo-menu-navegacao-hover-white);
 }
 
 body.dark #menu-navegacao ul a { /* Estilização do menu de navegação do menu quando em modo light */
-    color: black;
+    color: var(--cor-conteudo-white);
 }
 
 body.dark #rodape { /* Estilização do rodapé quando em modo light */
-    color: black;
+    color: var(--cor-conteudo-white);
 }
 
 /* Início do Menu de Navegação */
 #menu-navegacao {
     width: 68px; /* largura fixa quando recolhido */
     height: 100%;
-    background-color: #232323;
+    background-color: var(--cor-de-fundo);
     padding: 40px 0;
     box-shadow: 3px 3px 0 #f1faee;
     position: fixed;
@@ -134,7 +142,7 @@ body.dark #rodape { /* Estilização do rodapé quando em modo light */
 }
 
 .btn-expandir > i {
-    color: #f1faee;
+    color: var(--cor-icones);
     font-size: 24px;
     cursor: pointer;
 }
@@ -252,7 +260,7 @@ ul li.item-menu a .txt-link {
 #tecnologias-utilizadas {
     display: flex;
     height: 10%;
-    width: 100vh;
+    width: 110vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -341,7 +349,7 @@ ul li.item-menu a .txt-link {
 /* Inicio Seção de Formação */
 #formacao {
     display: flex;
-    height: 110vh;
+    height: 100vh;
     width: 85%;
     flex-direction: column;
     align-items: center;
@@ -394,7 +402,7 @@ ul li.item-menu a .txt-link {
 /* inicio opções para contato */
 #contato-links {
     display: flex;
-    height: 40vh;
+    height: 38vh;
     width: 85%;
     flex-direction: column;
     align-items: center;
@@ -441,7 +449,7 @@ ul li.item-menu a .txt-link {
 /* inicio do Formulário para entrar em contato */
 #contato {
     display: flex;
-    height: 85vh;
+    height: 80vh;
     width: 85%;
     flex-direction: column;
     align-items: center;
